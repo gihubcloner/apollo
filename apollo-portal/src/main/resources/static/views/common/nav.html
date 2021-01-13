@@ -1,13 +1,13 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <img class="navbar-brand side-bar-switch cursor-pointer" src="{{ '/img/show_sidebar.png' | prefixPath }}"
+            <img class="navbar-brand side-bar-switch cursor-pointer" ng-src="{{ '/img/show_sidebar.png' | prefixPath }}"
                  onMouseOver="this.style.background='#f1f2f7'"
                  onMouseOut="this.style.background='#fff'"
                  data-tooltip="tooltip" data-placement="bottom" title="{{'Common.Nav.ShowNavBar' | translate }}"
                  ng-show="viewMode == 2 && !showSideBar"
                  ng-click="showSideBar = !showSideBar">
-            <img class="navbar-brand side-bar-switch cursor-pointer" src="{{ '/img/hide_sidebar.png' | prefixPath }}"
+            <img class="navbar-brand side-bar-switch cursor-pointer" ng-src="{{ '/img/hide_sidebar.png' | prefixPath }}"
                  onMouseOver="this.style.background='#f1f2f7'"
                  onMouseOut="this.style.background='#fff'"
                  data-tooltip="tooltip" data-placement="bottom" title="{{'Common.Nav.HideNavBar' | translate }}"
